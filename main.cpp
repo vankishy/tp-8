@@ -17,7 +17,7 @@ int main() {
 
     printInfo(Lmain);
 
-    x = findElm(Lmain, 5);
+    x = findElm(Lmain, 5); //Test for search function
     cout << info(x) << endl;
     x = findElm(Lmain, 15);
     cout << info(x) << endl;
@@ -25,6 +25,11 @@ int main() {
     cout << info(x) << endl;
     x = findElm(Lmain, 85);
     cout << info(x) << endl;
+
+    /*deleteByValue(Lmain,5);
+    deleteByValue(Lmain,100);
+    deleteByValue(Lmain,45);
+    deleteByValue(Lmain,85);*/
 
     createList(L2);
     reverseList(Lmain, L2);
