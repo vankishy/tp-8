@@ -3,12 +3,12 @@
 //
 #include "cdll.h"
 
-void createList(List &L) {
+void createList_1302220001(List &L) {
     first(L) = NULL;
     last(L) = NULL;
 }
 
-address alokasi(infotype x) {
+address alokasi_1302220001(infotype x) {
     address P = new elmList;
 
     info(P) = x;
@@ -18,11 +18,11 @@ address alokasi(infotype x) {
     return P;
 }
 
-void dealokasi(address &P) {
+void dealokasi_1302220001(address &P) {
     delete P;
 }
 
-void insertFirst(List &L, address P) {
+void insertFirst_1302220001(List &L, address P) {
     if (first(L) != NULL && last(L) != NULL) {
         next(P) = first(L);
         prev(first(L)) = P;
@@ -33,7 +33,7 @@ void insertFirst(List &L, address P) {
     }
 }
 
-void insertAfter(List &L, address Prec, address P) {
+void insertAfter_1302220001(List &L, address Prec, address P) {
     if (first(L) != NULL && last(L) != NULL) {
         next(P) = next(Prec);
         prev(P) = Prec;
@@ -45,7 +45,7 @@ void insertAfter(List &L, address Prec, address P) {
     }
 }
 
-void insertLast(List &L, address P) {
+void insertLast_1302220001(List &L, address P) {
     if (first(L) != NULL && last(L) != NULL) {
         next(P) = first(L);
         prev(P) = last(L);
@@ -59,7 +59,7 @@ void insertLast(List &L, address P) {
     }
 }
 
-address findElm(List &L, infotype x) {
+address findElm_1302220001(List &L, infotype x) {
     address P, Pfound;
 
     P = first(L);
@@ -77,7 +77,7 @@ address findElm(List &L, infotype x) {
     return Pfound;
 }
 
-void deleteFirst(List &L, address &P) {
+void deleteFirst_1302220001(List &L, address &P) {
     if (next(P) != first(L) && prev(P) != first(L)) {
         first(L) = next(first(L));
         next(P) = NULL;
@@ -88,7 +88,7 @@ void deleteFirst(List &L, address &P) {
     }
 }
 
-void deleteAfter(List &L, address Prec, address &P) {
+void deleteAfter_1302220001(List &L, address Prec, address &P) {
     Prec = prev(P);
     next(Prec) = next(P);
     prev(next(P)) = Prec;
@@ -96,7 +96,7 @@ void deleteAfter(List &L, address Prec, address &P) {
     next(P) = NULL;
 }
 
-void deleteLast(List &L, address &P) {
+void deleteLast_1302220001(List &L, address &P) {
     if (prev(P) != last(L) && next(P) != last(L)) {
         last(L) = prev(last(L));
         prev(P) = NULL;
@@ -107,7 +107,7 @@ void deleteLast(List &L, address &P) {
     }
 }
 
-void printInfo(List L) {
+void printInfo_1302220001(List L) {
     address P;
 
     P = first(L);
@@ -129,7 +129,7 @@ void printReverse(List L) {
     cout << endl;
 }
 
-/*void deleteByValue(List &L, infotype x){
+/*void deleteByValue_1302220001(List &L, infotype x){
     if (first(L) == NULL && last(L) == NULL) {
         cout << "List kosong" << endl;
     } else {
@@ -143,7 +143,7 @@ void printReverse(List L) {
     }
 }*/
 
-void reverseList(List L, List &L2) {
+void reverseList_1302220001(List L, List &L2) {
     address Plast, P;
     infotype angka;
 

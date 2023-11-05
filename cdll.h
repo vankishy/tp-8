@@ -26,18 +26,18 @@ struct List {
     address first, last;
 };
 
-void createList(List &L);
-address alokasi(infotype x);
-void dealokasi(address &P);
-void insertFirst(List &L, address P);
-void insertAfter(List &L, address Prec, address P);
-void insertLast(List &L, address P);
-address findElm(List &L, infotype x);
-void deleteFirst(List &L, address &P);
-void deleteAfter(List &L, address Prec, address &P);
-void deleteLast(List &L, address &P);
-void printInfo(List L);
-void deleteByValue(List &L, infotype x);
-void reverseList(List L, List &L2);
+void createList_1302220001(List &L);
+address alokasi_1302220001(infotype x);
+void dealokasi_1302220001(address &P);
+void insertFirst_1302220001(List &L, address P);
+void insertAfter_1302220001(List &L, address Prec, address P);
+void insertLast_1302220001(List &L, address P);
+address findElm_1302220001(List &L, infotype x);
+void deleteFirst_1302220001(List &L, address &P);
+void deleteAfter_1302220001(List &L, address Prec, address &P);
+void deleteLast_1302220001(List &L, address &P);
+void printInfo_1302220001(List L);
+void deleteByValue_1302220001(List &L, infotype x);
+void reverseList_1302220001(List L, List &L2);
 void printReverse(List L2);
 #endif //UNTITLED6_CDLL_H
